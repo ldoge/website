@@ -1,0 +1,28 @@
+@import '~src/mixins';
+
+.client-compare-area {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+
+  @include query(tablet) {
+    flex-direction: column;
+  }
+
+  .compare-item {
+    flex: 1 1 50%;
+  }
+}
+
+.client-compare-card {
+  width: 50%;
+  margin: 0 auto;
+
+  @include query(tablet) {
+    width: 75%;
+  }
+
+  @include query(mobile) {
+    width: 90%;
+  }
+}
