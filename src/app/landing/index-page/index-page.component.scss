@@ -51,31 +51,71 @@
   }
 }
 
-.client-compare-area {
+h2 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 6rem;
+}
+
+#features {
   margin-top: 40px;
   margin-bottom: 40px;
   min-height: 50vh;
-  display: flex;
-  flex-direction: row;
 
-  @include query(tablet) {
-    flex-direction: column;
-  }
+  .feature-list-area {
+    display: flex;
+    flex-direction: row;
 
-  .compare-item {
-    flex: 1 1 50%;
+    @include query(tablet) {
+      flex-direction: column;
+    }
+
+    .feature-item {
+      flex: 1 1 50%;
+    }
+
+    .feature-info {
+      padding: 10px;
+      width: 75%;
+      margin: 0 auto;
+      text-align: center;
+
+      @include query(mobile) {
+        width: 90%;
+      }
+    }
   }
 }
 
-.client-compare-card {
-  width: 50%;
-  margin: 0 auto;
+#wallets {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  min-height: 50vh;
 
-  @include query(tablet) {
-    width: 75%;
+  .client-compare-area {
+    display: flex;
+    flex-direction: row;
+
+    @include query(tablet) {
+      flex-direction: column;
+    }
+
+    .compare-item {
+      flex: 1 1 50%;
+    }
   }
 
-  @include query(mobile) {
-    width: 90%;
+  .client-compare-card {
+    width: 50%;
+    margin: 0 auto;
+
+    @include query(tablet) {
+      width: 75%;
+    }
+
+    @include query(mobile) {
+      width: 90%;
+    }
   }
 }
+
