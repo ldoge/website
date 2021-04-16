@@ -34,4 +34,4 @@ jobs:
       - name: Install GitHub pages manager
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run ng -- deploy --base-href=/website/ --name="Huiren Woo" --email="giantcrabby@gmail.com" --no-silent
+        run: npm run ng -- deploy --base-href=/ --cname=www.ldoge-wow.com --name="Huiren Woo" --email="giantcrabby@gmail.com" --no-silent
