@@ -32,8 +32,6 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Install GitHub pages manager
-        run: npm install -g angular-cli-ghpages
-      - name: Page Build
-        run: npm run build-pages
-      - name: Deploy
-        run: ngh --dir dist/litedoge-website
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run ng -- deploy --base-href=/website/ --name="Huiren Woo" --email="giantcrabby@gmail.com" --no-silent
