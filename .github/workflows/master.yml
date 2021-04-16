@@ -34,6 +34,6 @@ jobs:
       - name: Install GitHub pages manager
         run: npm install -g angular-cli-ghpages
       - name: Page Build
-        run: ng build --prod --base-href "https://ldoge.github.io/"
+        run: npm run build-pages
       - name: Deploy
         run: ngh --dir dist/litedoge-website
