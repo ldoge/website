@@ -4,7 +4,23 @@ html, body {
   height: 100%;
 }
 
+@font-face {
+  font-family: 'Comic Sans';
+  src: url('~src/assets/fonts/LDFComicSans.ttf') format('truetype');
+}
+
+$font: 400 24px/32px 'Comic Sans', "Helvetica Neue", sans-serif;
+$font-family: 'Comic Sans', "Helvetica Neue", sans-serif !important;
+
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font: $font;
+}
+
+.mat-typography,
+.mat-typography .mat-typography,
+.mat-typography h1,
+.mat-card,
+.mat-button {
+  font-family: $font-family;
 }

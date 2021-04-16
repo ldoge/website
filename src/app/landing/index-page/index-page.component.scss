@@ -1,7 +1,60 @@
 @import '~src/mixins';
+@import '~src/variables';
+
+#intro {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  background-color: $space-color;
+
+  .planets {
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  .planet1 {
+    background-image: url("~src/assets/img/saturn.svg");
+    background-size: 20%;
+    background-position: right top;
+  }
+
+  #intro-filter {
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+
+    #intro-info {
+      padding-top: 20vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 120px;
+      line-height: 8rem;
+      @include query(tablet) {
+        font-size: 80px;
+        line-height: 7rem;
+      }
+
+      @include query(mobile) {
+        font-size: 60px;
+        line-height: 6rem;
+      }
+    }
+  }
+}
 
 .client-compare-area {
-  height: 50vh;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  min-height: 50vh;
   display: flex;
   flex-direction: row;
 
