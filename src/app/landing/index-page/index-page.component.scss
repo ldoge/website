@@ -33,6 +33,21 @@
     #intro-info {
       padding-top: 20vh;
       text-align: center;
+
+      img {
+        max-width: 100%;
+        min-height: 200px;
+        max-height: 60vh;
+        margin: 0 auto;
+
+        @include query(tablet) {
+          max-width: 95%;
+        }
+
+        @include query(mobile) {
+          max-width: 90%;
+        }
+      }
     }
 
     h1 {
