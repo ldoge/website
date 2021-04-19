@@ -318,14 +318,11 @@ h2 {
   #community-area {
     display: flex;
     flex-direction: row;
-
-    @include query(tablet) {
-      flex-direction: column;
-    }
+    flex-wrap: wrap;
 
     .community-item {
-      flex: 1 1 20%;
-      margin: 20px 0;
+      flex: 1 1;
+      margin: 20px 10px;
     }
   }
 }
