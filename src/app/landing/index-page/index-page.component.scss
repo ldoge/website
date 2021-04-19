@@ -2,29 +2,57 @@
 @import '~src/variables';
 
 @-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg); }
-  to { -moz-transform: rotate(360deg); }
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
 }
+
 @-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
+
 @keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @-moz-keyframes counter-spin {
-  from { -moz-transform: rotate(360deg); }
-  to { -moz-transform: rotate(0deg); }
+  from {
+    -moz-transform: rotate(360deg);
+  }
+  to {
+    -moz-transform: rotate(0deg);
+  }
 }
+
 @-webkit-keyframes counter-spin {
-  from { -webkit-transform: rotate(360deg); }
-  to { -webkit-transform: rotate(0deg); }
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
 }
+
 @keyframes counter-spin {
-  from {transform:rotate(360deg);}
-  to {transform:rotate(0deg);}
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 
@@ -265,4 +293,39 @@ h2 {
 
 #community {
   text-align: center;
+
+  .icon {
+    padding: 10px;
+    width: 96px;
+  }
+
+  .explorer {
+    color: $star-color;
+  }
+
+  .discord {
+    fill: #7289da;
+  }
+
+  .twitter {
+    fill: #1DA1F2;
+  }
+
+  .reddit {
+    fill: #FF4500;
+  }
+
+  #community-area {
+    display: flex;
+    flex-direction: row;
+
+    @include query(tablet) {
+      flex-direction: column;
+    }
+
+    .community-item {
+      flex: 1 1 20%;
+      margin: 20px 0;
+    }
+  }
 }
