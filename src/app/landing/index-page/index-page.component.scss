@@ -46,8 +46,18 @@
   .planet1 {
     background-image: url("~src/assets/img/saturn.svg");
     background-size: 20%;
-    background-position: 70vw top;
+    background-position: 60vw top;
     -webkit-animation: spin 5s infinite linear;
+
+    @include query(tablet) {
+      background-size: 40%;
+      background-position: 60vw top;
+    }
+
+    @include query(mobile) {
+      background-size: 45%;
+      background-position: 60vw top;
+    }
   }
 
   .planet2 {
@@ -55,6 +65,16 @@
     background-size: 10%;
     background-position: 10vw bottom;
     -webkit-animation: counter-spin 0.7s infinite linear;
+
+    @include query(tablet) {
+      background-size: 20%;
+      background-position: 15vw bottom;
+    }
+
+    @include query(mobile) {
+      background-size: 25%;
+      background-position: 15vw bottom;
+    }
   }
 
   .planet3 {
@@ -62,6 +82,16 @@
     background-size: 15%;
     background-position: 80vw center;
     -webkit-animation: spin 4s infinite linear;
+
+    @include query(tablet) {
+      background-size: 30%;
+      background-position: 65vw center;
+    }
+
+    @include query(mobile) {
+      background-size: 35%;
+      background-position: 60vw center;
+    }
   }
 
   #intro-filter {
@@ -172,6 +202,7 @@ h2 {
 
     .compare-item {
       flex: 1 1 50%;
+      margin: 20px 0;
     }
   }
 
