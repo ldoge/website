@@ -197,18 +197,23 @@ h2 {
   .feature-list-area {
     display: flex;
     flex-direction: row;
-
-    @include query(tablet) {
-      flex-direction: column;
-    }
+    flex-wrap: wrap;
 
     .feature-item {
-      flex: 1 1 50%;
+      flex: 1 1 40%;
+
+      @include query(tablet) {
+        flex: 1 1 80%;
+      }
+
+      @include query(mobile) {
+        flex: 1 1 100%;
+      }
     }
 
     .feature-info {
       padding: 10px;
-      width: 75%;
+      width: 80%;
       margin: 0 auto;
       text-align: center;
 
@@ -223,23 +228,28 @@ h2 {
   .client-compare-area {
     display: flex;
     flex-direction: row;
-
-    @include query(tablet) {
-      flex-direction: column;
-    }
+    flex-wrap: wrap;
 
     .compare-item {
-      flex: 1 1 50%;
+      flex: 1 1 40%;
       margin: 20px 0;
+
+      @include query(tablet) {
+        flex: 1 1 80%;
+      }
+
+      @include query(mobile) {
+        flex: 1 1 100%;
+      }
     }
   }
 
   .client-compare-card {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 
     @include query(tablet) {
-      width: 75%;
+      width: 80%;
     }
 
     @include query(mobile) {
