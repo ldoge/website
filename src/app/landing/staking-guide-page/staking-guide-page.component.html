@@ -1,0 +1,49 @@
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side">
+    <mat-list role="navigation">
+      <a mat-list-item role="navigation" routerLink="/">Home</a>
+      <a mat-list-item role="navigation" routerLink="/staking">Staking Guide</a>
+    </mat-list>
+  </mat-drawer>
+  <mat-toolbar>
+    <button mat-icon-button aria-label="Main navigation menu" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>LiteDoge</span>
+  </mat-toolbar>
+  <div id="header">
+    <div class="planet1"></div>
+    <h1>Staking Guide</h1>
+  </div>
+  <div id="guide">
+    <div id="guide-content">
+      <h2>Self Hosted Staking</h2>
+      <p>Requirements:</p>
+      <mat-list role="list">
+        <mat-list-item role="listitem">Stable Internetz</mat-list-item>
+        <mat-list-item role="listitem">Full LiteDoge Wallet (QT Client only)</mat-list-item>
+        <mat-list-item role="listitem">LiteDoge stack of at least 1 million LD</mat-list-item>
+      </mat-list>
+      <p>Steps:</p>
+      <mat-list role="list">
+        <mat-list-item role="listitem">Synchronize your Full LiteDoge Wallet</mat-list-item>
+        <mat-list-item role="listitem">Send your LiteDoges into LD address</mat-list-item>
+        <mat-list-item role="listitem">Unlock your wallet (if it is locked)</mat-list-item>
+        <mat-list-item role="listitem">Wait for client to say 'Staking'</mat-list-item>
+        <mat-list-item role="listitem">????? When moon sirs???????</mat-list-item>
+        <mat-list-item role="listitem">PROFIT!!!111oneoneleven</mat-list-item>
+      </mat-list>
+
+      <h2>Useful Information</h2>
+      <mat-list role="list">
+        <mat-list-item role="listitem">Staking rewards you based on how many coins you are HODL'ing.</mat-list-item>
+        <mat-list-item role="listitem">Sending coins out from your staking wallet may affect your staking and even
+          cancel
+          incoming stake rewards.
+        </mat-list-item>
+        <mat-list-item role="listitem">There are currently no delegation mechanics; staking pools are trust-based.
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </div>
+</mat-drawer-container>
