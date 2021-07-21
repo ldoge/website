@@ -134,7 +134,13 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "noSilent": true,
+            "cname": "ldoge-wow.com",
+            "baseHref": "/",
+            "name": "LiteDoge Web CI",
+            "email": "team@ldoge-wow.com"
+          }
         }
       }
     }
