@@ -63,14 +63,33 @@
           <p>A full wallet for you to send, receive transactions and stake locally.</p>
         </mat-card-content>
         <mat-card-actions>
-          <a mat-raised-button href="https://github.com/ldoge/LDOGE/releases/download/3.5.0.0/litedoge-qt-Win-64bit.zip" color="primary">QT Core 64 bit 3.5.0.0 Win Wallet </a>
-          <a mat-raised-button href="https://github.com/ldoge/LDOGE/releases/download/3.5.0.0/litedoge-qt-win32bit.zip" color="primary">QT Core 32 bit 3.5.0.0 Win Wallet</a>
-          <a mat-raised-button href="https://github.com/ldoge/LDOGE/releases/download/v3.4.1.1/LiteDoge-Qt-Mac-v3.4.1.1.dmg" color="primary">QT Core 3.4.1.1 Mac Wallet</a>
-          <a mat-raised-button href="https://github.com/ldoge/LDOGE/releases/download/3.5.0.0/ubuntu-16-gui.zip" color="primary">QT Core 3.5.0.0. Ubuntu-16 Wallet</a>
-          <a mat-raised-button href="https://github.com/ldoge/litedoge-js" color="accent">JavaScript 3.5.0.0 Wallet</a>
-          <a mat-raised-button href="http://more-magic.org/ldoge_snapshots/" color="accent">Blockchain Snapshot Download/a>
-          <a mat-raised-button href="https://drive.google.com/file/d/1llCLv2GJofvEScYbTC1QlkvA2GuqJ5J_/view?usp=sharing" color="accent">Blockchain Bootstrap Download/a>
-
+          <a mat-raised-button href="https://github.com/ldoge/LDOGE/releases/download/3.5.0.0/litedoge-qt-Win-64bit.zip"
+             rel="noreferrer noopener" color="primary">64 bit 3.5.0.0 Windows</a>
+          <a mat-raised-button href="https://github.com/ldoge/LDOGE/releases/download/3.5.0.0/litedoge-qt-win32bit.zip"
+             rel="noreferrer noopener" color="accent">32 bit 3.5.0.0 Windows</a>
+          <a mat-raised-button
+             href="https://github.com/ldoge/LDOGE/releases/download/v3.4.1.1/LiteDoge-Qt-Mac-v3.4.1.1.dmg"
+             rel="noreferrer noopener" color="primary">3.4.1.1 Mac</a>
+          <a mat-raised-button href="https://github.com/ldoge/LDOGE/releases/download/3.5.0.0/ubuntu-16-gui.zip"
+             rel="noreferrer noopener" color="accent">3.5.0.0 Ubuntu-16</a>
+          <a mat-raised-button href="https://github.com/ldoge/litedoge-js" rel="noreferrer noopener" color="primary">JavaScript Wallet</a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="compare-item">
+      <mat-card class="client-compare-card">
+        <mat-card-header>
+          <mat-card-title>Utilities</mat-card-title>
+          <mat-card-subtitle>Quality of life improvement tools</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Tools that can help you with your LiteDoge wallet usage.</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a mat-raised-button href="http://more-magic.org/ldoge_snapshots/" rel="noreferrer noopener" color="primary">Blockchain
+            Snapshot Download</a>
+          <a mat-raised-button href="https://drive.google.com/file/d/1llCLv2GJofvEScYbTC1QlkvA2GuqJ5J_/view?usp=sharing"
+             rel="noreferrer noopener" color="accent">Blockchain Bootstrap Download</a>
         </mat-card-actions>
       </mat-card>
     </div>
@@ -80,17 +99,38 @@
 <div id="trade" class="space-area">
   <h2>Buy High, Sell Low</h2>
   <p>Not financial advice. LiteDoge is available on these many markets!</p>
-BTCPOP - P2P Lending platform Peer to Peer Bitcoin Banking, Lend and Borrow Bitcoins. Investment Pools. Initial Public Offerings.
-https://btcpop.co/ 
+  <p>Do Not deposit LDOGE on yobit exchange, deposits and withdraws are disabled.</p>
 
-AltMarkets - Focused, lower tier crypto-currency exchange A Cryptocurrency Exchange aimed towards new and lower market cap coins and tokens, Trade today at one of the fastest growing exchanges in Europe.
-https://altmarkets.io/trading/ldogebtc
-https://altmarkets.io/trading/ldogedoge
-https://altmarkets.io/trading/ldogeltc
-https://altmarkets.io/trading/ldogecro
-https://altmarkets.io/trading/ldogeeth 
- 
-Do Not deposit LDOGE on yobit exchange, deposts and withdraws are disabled.
+  <div class="trading-area">
+    <div class="trading-item">
+      <mat-card class="trading-card">
+        <mat-card-header>
+          <h3>BTCPOP</h3>
+        </mat-card-header>
+        <mat-card-content>
+          <p>P2P Lending platform Peer to Peer Bitcoin Banking, Lend and Borrow Bitcoins. Investment Pools. Initial Public Offerings.</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a mat-raised-button href="https://btcpop.co/" rel="noreferrer noopener" target="_blank">View
+            Website</a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <div class="trading-item">
+      <mat-card class="trading-card">
+        <img mat-card-image src="assets/img/altmarkets-logo.png" alt="Altmarkets Logo">
+        <mat-card-content>
+          <p>Focused, lower tier crypto-currency exchange A Cryptocurrency Exchange aimed towards new and lower market
+            cap coins and tokens, Trade today at one of the fastest growing exchanges in Europe.</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a mat-raised-button href="https://v2.altmarkets.io/trading/ldogedoge" rel="noreferrer noopener"
+             target="_blank">View Trading Pair</a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
 </div>
 
 <div id="community" class="area">
