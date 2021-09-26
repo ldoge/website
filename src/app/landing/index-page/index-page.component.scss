@@ -203,22 +203,32 @@ h3 {
       flex: 0 0 100%;
       margin: 20px 0;
 
+    .client-compare-card {
+          background: #f1f1f1;
+          padding-top: 30px;
+    }  
+
      .mat-card-actions {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         align-items: baseline;
+
         
         h3 {
           flex: 0 0 100%;
           margin-bottom: 0;
         }
 
-
         a {
           text-align: center;
           color: #333;
           text-decoration: none;
+
+          img {
+            border-radius:5px
+          }
+          
         }
         a.mat-primary {
           color: #fff !important;
@@ -226,6 +236,10 @@ h3 {
           margin: 0 !important;
           background: #000;
           letter-spacing: 1px;
+      }
+
+      a.button-white {
+        color:#fff !important
       }
         
     }
