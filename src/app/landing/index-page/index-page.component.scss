@@ -207,6 +207,7 @@ h3 {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        align-items: baseline;
         
         h3 {
           flex: 0 0 100%;
@@ -224,7 +225,6 @@ h3 {
           box-shadow: 0 0 0;
           margin: 0 !important;
           background: #000;
-          font-family: "Arial" !important;
           letter-spacing: 1px;
       }
         
