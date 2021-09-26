@@ -1,11 +1,21 @@
 @import '~src/mixins';
 @import '~src/variables';
 
+p {
+  font-family: "Arial" !important;
+  font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
 #intro {
   width: 100%;
   height: 100vh;
-  min-height: 500px;
   background-color: $space-color;
+  background-image: url("~src/assets/img/space.jpeg");
+  background-repeat: repeat;
+  background-size: contain;
+  min-height: 105vh;
 
   .planets {
     width: 100%;
@@ -18,9 +28,9 @@
 
   .planet1 {
     background-image: url("~src/assets/img/saturn.svg");
-    background-size: 20%;
+    background-size: 6%;
     background-position: 60vw top;
-    -webkit-animation: spin 5s infinite linear;
+    -webkit-animation: spin 50s infinite linear;
 
     @include query(tablet) {
       background-size: 40%;
@@ -35,9 +45,9 @@
 
   .planet2 {
     background-image: url("~src/assets/img/dots.svg");
-    background-size: 10%;
-    background-position: 10vw bottom;
-    -webkit-animation: counter-spin 0.7s infinite linear;
+    background-size: 5%;
+    background-position: 33vw bottom;
+    -webkit-animation: counter-spin 40s infinite linear;
 
     @include query(tablet) {
       background-size: 20%;
@@ -52,9 +62,9 @@
 
   .planet3 {
     background-image: url("~src/assets/img/dots-2.svg");
-    background-size: 15%;
-    background-position: 80vw center;
-    -webkit-animation: spin 4s infinite linear;
+    background-size: 4%;
+    background-position: 65vw center;
+    -webkit-animation: spin 20s infinite linear;
 
     @include query(tablet) {
       background-size: 30%;
@@ -79,7 +89,7 @@
     #intro-info {
       z-index: 10;
       position: relative;
-      padding-top: 20vh;
+      padding-top: 10vh;
       text-align: center;
 
       img {
@@ -95,6 +105,9 @@
         @include query(mobile) {
           max-width: 90%;
         }
+      }
+      p {
+        font-size: 24px;
       }
     }
 
@@ -120,6 +133,10 @@ h2 {
   line-height: 6rem;
 }
 
+h3 {
+  font-size: 28px;
+}
+
 .area,
 .space-area {
   padding-top: 40px;
@@ -143,9 +160,14 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 1080px;
+    margin: 0 auto;
+    gap: 20px;
 
     .feature-item {
       flex: 1 1 40%;
+      border: 1px solid #eee;
+      padding: 20px 0;
 
       @include query(tablet) {
         flex: 1 1 80%;
@@ -174,10 +196,35 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 1080px;
+    margin: 0 auto;
 
     .compare-item {
-      flex: 1 1 40%;
+      flex: 0 0 100%;
       margin: 20px 0;
+
+     .mat-card-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        h3 {
+          flex: 0 0 100%;
+          margin-bottom: 0;
+        }
+
+
+        a {
+          text-align: center;
+          color: #333;
+          text-decoration: none;
+        }
+        
+    }
+
+      p, .mat-card-actions {
+        margin: 0 16px 16px;
+      }
 
       @include query(tablet) {
         flex: 1 1 80%;
@@ -209,7 +256,13 @@ h2 {
 
 #trade {
   text-align: center;
-
+  background-image: url("~src/assets/img/space.jpeg");
+  background-size: contain;
+  background-repeat: repeat;
+ & > p {
+    margin-bottom: 68px !important;
+    font-size: 20px !important;
+  }
   .trading-area {
     z-index: 10;
     display: flex;
@@ -226,17 +279,22 @@ h2 {
     h3, p {
       color: #FFFFFF;
     }
+    
   }
 
   .trading-card {
-    background-color: rgba(0, 0, 0, 0.40);
+    background-color: rgb(35 35 35 / 73%);
     z-index: 10;
     width: 50%;
     margin: 0 auto;
-
+    padding: 45px 16px;
     transition-duration: 86ms;
     transition-property: box-shadow, transform, -webkit-transform;
     will-change: box-shadow, transform;
+
+    .mat-card-header {
+      justify-content: center;
+    }
 
     @include query(tablet) {
       width: 75%;
@@ -287,5 +345,5 @@ h2 {
       flex: 1 1;
       margin: 20px 10px;
     }
-  }
+  } 
 }
