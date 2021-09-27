@@ -10,7 +10,7 @@ p {
 
 #intro {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: $space-color;
   background-image: url("~src/assets/img/space.jpeg");
   background-repeat: repeat;
@@ -147,7 +147,7 @@ h3 {
 
 .area {
   z-index: 10;
-  background-color: #FFFFFF;
+  background-color: #ffffffde;
 }
 
 .space-area {
@@ -192,6 +192,7 @@ h3 {
 }
 
 #wallets {
+background: #c1c1c1a8;
   .client-compare-area {
     display: flex;
     flex-direction: row;
@@ -204,7 +205,7 @@ h3 {
       margin: 20px 0;
 
     .client-compare-card {
-          background: #f1f1f1;
+          background: #fff;
           padding-top: 30px;
     }  
 
@@ -336,6 +337,8 @@ h3 {
 
 #community {
   text-align: center;
+  max-width:1080px;
+  margin: 0 auto;
 
   .icon {
     padding: 10px;
@@ -362,10 +365,20 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 840px;
+    margin: 0 auto;
 
     .community-item {
       flex: 1 1;
       margin: 20px 10px;
+
+      a {
+        text-decoration:none;
+      div {
+          color:#333;
+          text-decoration:none;
+        }
+      }
     }
   } 
 }
