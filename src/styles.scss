@@ -15,6 +15,10 @@ $font-family: 'Comic Sans', "Helvetica Neue", sans-serif !important;
 body {
   margin: 0;
   font: $font;
+  background-image: url("~src/assets/img/space.jpeg");
+  background-size: contain;
+  background-repeat: repeat;
+
 }
 
 .mat-typography,
