@@ -1,6 +1,7 @@
 @import '~src/variables';
 @import '~src/mixins';
 
+
 .mat-toolbar-single-row {
       z-index: 9;
     white-space: nowrap;
@@ -52,6 +53,7 @@
     -webkit-animation: scale 50s infinite ease-in-out;
     top: 0;
     left: 0;
+
     @include query(tablet) {
       background-size: 40%;
     }
@@ -72,6 +74,7 @@
   #guide-content {
     width: 90%;
     margin: 0 auto;
+    min-height: 80vh;
 
     mat-list {
       margin-bottom: 50px;

@@ -1,6 +1,8 @@
 @import '~src/mixins';
 @import '~src/variables';
 
+
+
 p {
   font-family: "Arial" !important;
   font-size: 16px;
@@ -11,11 +13,12 @@ p {
 #intro {
   width: 100%;
   height: auto;
-  background-color: $space-color;
+  /*background-color: $space-color;
   background-image: url("~src/assets/img/space.jpeg");
   background-repeat: repeat;
-  background-size: contain;
+  background-size: contain; */
   min-height: 105vh;
+  background-color: rgba(0, 0, 0, 0.45);
 
   .planets {
     width: 100%;
@@ -78,10 +81,10 @@ p {
   }
 
   #intro-filter {
-    background-color: rgba(0, 0, 0, 0.45);
+    /* background-color: rgba(0, 0, 0, 0.45); */
     width: 100%;
     height: 100vh;
-    min-height: 500px;
+    min-height: 530px;
     margin: 0;
     padding: 0;
     color: #FFF;
@@ -141,18 +144,19 @@ h3 {
 .space-area {
   padding-top: 40px;
   padding-bottom: 40px;
-  min-height: 50vh;
-  position: relative;
+  /* min-height: 50vh; */
+
 }
 
 .area {
   z-index: 10;
-  background-color: #ffffffde;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .space-area {
   color: #FFFFFF;
-  background-color: $space-color;
+  /* background-color: $space-color; */
+  background-color: rgba(0, 0, 0, 0.45)
 }
 
 #features {
@@ -192,7 +196,7 @@ h3 {
 }
 
 #wallets {
-background: #c1c1c1a8;
+background: rgba(0, 0, 0, 0.45);
   .client-compare-area {
     display: flex;
     flex-direction: row;
@@ -279,9 +283,7 @@ background: #c1c1c1a8;
 
 #trade {
   text-align: center;
-  background-image: url("~src/assets/img/space.jpeg");
-  background-size: contain;
-  background-repeat: repeat;
+
  & > p {
     margin-bottom: 68px !important;
     font-size: 20px !important;
@@ -300,7 +302,7 @@ background: #c1c1c1a8;
     }
 
     h3, p {
-      color: #FFFFFF;
+
     }
     
   }
@@ -337,12 +339,15 @@ background: #c1c1c1a8;
 
 #community {
   text-align: center;
-  max-width:1080px;
-  margin: 0 auto;
+ 
 
   .icon {
     padding: 10px;
     width: 96px;
+  }
+  .github {
+    fill: #ffffffeb;
+    
   }
 
   .explorer {
@@ -375,10 +380,31 @@ background: #c1c1c1a8;
       a {
         text-decoration:none;
       div {
-          color:#333;
+         
           text-decoration:none;
         }
       }
     }
   } 
 }
+
+div.inner-area {
+    max-width: 1080px;
+    margin: 0 auto;
+    align-items: baseline;
+    z-index: 999;
+    position: relative;
+
+    h2, h3, p, div {
+      color:#fff
+    }
+
+    .light-bg {
+      color:#333;
+     h2, h3, p {
+      color:#333
+    }
+}
+}
+
+

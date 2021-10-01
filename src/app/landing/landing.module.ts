@@ -5,6 +5,7 @@ import {IndexPageComponent} from './index-page/index-page.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {StakingGuidePageComponent} from './staking-guide-page/staking-guide-page.component';
+import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
 import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -14,7 +15,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 @NgModule({
   declarations: [
     IndexPageComponent,
-    StakingGuidePageComponent
+    StakingGuidePageComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     CommonModule,

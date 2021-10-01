@@ -1,0 +1,61 @@
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side">
+    <mat-list role="navigation">
+      <a mat-list-item role="navigation" routerLink="/">Home</a>
+      <a mat-list-item role="navigation" routerLink="/staking">Staking Guide</a>
+    </mat-list>
+  </mat-drawer>
+  <mat-toolbar>
+    <button mat-icon-button aria-label="Main navigation menu" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>LiteDoge</span>
+  </mat-toolbar>
+  <div id="header">
+    <div class="planet1"></div>
+    <div class="logo"></div>
+    <h1>Privacy Policy</h1>
+  </div>
+  <div id="guide">
+    <div id="guide-content">
+      <h2>LiteDoge</h2>
+      <p> 
+
+Copyright (c) 2015-2021 LiteDogecoin Developers <br/>
+Copyright (c) 2011-2021 Peercoin Developers <br/><br/>
+Distributed under the MIT/X11 software license, see the accompanying
+file license.txt or http://www.opensource.org/licenses/mit-license.php.
+This product includes software developed by the OpenSSL Project for use in
+the OpenSSL Toolkit (http://www.openssl.org/).  This product includes
+cryptographic software written by Eric Young (eay@cryptsoft.com).
+</p>
+
+<h2>Intro </h2>
+<p>
+LiteDoge is a free open source project derived from Bitcoin, with
+the goal of providing a long-term energy-efficient scrypt-based cryptocurrency.
+Built on the foundation of Bitcoin, Peercoin, Blackcoin.  LiteDoge, innovations such as proof-of-stake and scrypt
+help further advance the field of crypto-currency along with along with real world use and application of Proof of work and Proof of Stake. With a 64 second block time and difficulty retarget every block helping to make the blockchain fast and secure along with Proof of Stake 2.0.
+Real world use will be a software and web ecosystem with tipping bots and in game use, along with teaching how to use money in a fun way.</p>
+
+<mat-card-actions>
+  <a mat-raised-button href="https://www.iubenda.com/privacy-policy/86249665/legal"
+  target="_blank" color="primary">Detailed Privacy Policy</a>
+</mat-card-actions> 
+  
+    
+    </div>
+  </div>
+</mat-drawer-container>
+<div id="copyright-bar" >
+  <div class="inner-area">
+ 
+ <div class="text-left light-bg"> Copyright (c) 2021 LiteDogecoin Developers </div>
+ <div class="text-right light-bg"> 
+  <ul class="foot-menu">
+    <li> <a href="./privacy-policy"> Privacy Policy</a></li>
+  <!--   <li> <a href="#">Terms </a></li> -->
+  </ul>
+</div>
+</div>
+</div>
