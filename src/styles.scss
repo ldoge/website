@@ -36,7 +36,6 @@ body {
   font-family: $font-family;
 }
 
-
 div.inner-area {
     max-width: 1080px;
     margin: 0 auto;
@@ -143,4 +142,13 @@ border-top: 1px solid #eee;
 @keyframes scale {
   0%   {transform: scale(1);}
   100% {transform: scale(1.5);}
+}
+
+@media only screen and (max-width: 768px) {
+  
+.logo {
+    height: 50% !important;
+    bottom: auto !important;
+    top: 20px !important;
+}
 }
